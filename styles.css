@@ -4,3 +4,9 @@
     width: 1300px;
     height: 900px;
 }
+
+.inputs input_box {
+    position: absolute;
+    left: 1390px;
+    top: 258px;
+}
