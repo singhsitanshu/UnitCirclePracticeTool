@@ -5,7 +5,7 @@
     height: 900px;
 }
 
-.inputs input_box {
+.inputs #result_box{
     position: absolute;
     left: 1390px;
     top: 258px;
