@@ -9,7 +9,7 @@
 
     {% if result1 == 'true' %}
     <style>
-        .inputs #result_box{
+        .inputs #result_box:nth-child(1){
             background-color: #00ff00;
         }
     </style>
@@ -17,7 +17,7 @@
 
     {% if result1 == 'false' %}
     <style>
-        .inputs #result_box{
+        .inputs #result_box:nth-child(1){
             background-color: #FF0000;
         }
     </style>
@@ -25,7 +25,7 @@
 
     {% if result2 == 'true' %}
     <style>
-        .inputs #result_box{
+        .inputs #result_box:nth-child(2){
             background-color: #00ff00;
         }
     </style>
@@ -33,7 +33,55 @@
 
     {% if result2 == 'false' %}
     <style>
-        .inputs #result_box{
+        .inputs #result_box:nth-child(2){
+            background-color: #FF0000;
+        }
+    </style>
+    {% endif %}
+
+    {% if result3 == 'true' %}
+    <style>
+        .inputs #result_box:nth-child(3){
+            background-color: #00ff00;
+        }
+    </style>
+    {% endif %}
+
+    {% if result3 == 'false' %}
+    <style>
+        .inputs #result_box:nth-child(3){
+            background-color: #FF0000;
+        }
+    </style>
+    {% endif %}
+
+    {% if result4 == 'true' %}
+    <style>
+        .inputs #result_box:nth-child(4){
+            background-color: #00ff00;
+        }
+    </style>
+    {% endif %}
+
+    {% if result4 == 'false' %}
+    <style>
+        .inputs #result_box:nth-child(4){
+            background-color: #FF0000;
+        }
+    </style>
+    {% endif %}
+
+    {% if result5 == 'true' %}
+    <style>
+        .inputs #result_box:nth-child(5){
+            background-color: #00ff00;
+        }
+    </style>
+    {% endif %}
+
+    {% if result5 == 'false' %}
+    <style>
+        .inputs #result_box:nth-child(5){
             background-color: #FF0000;
         }
     </style>
@@ -47,16 +95,36 @@
         </div>
     </div>
 
+    <!-- <button style="width: 100px; height: 50px;">  </button>  --> 
+
     <div class="inputs">
         <form action="/input" method="post">
             <div id="result_box" class="{{result}}">
                 <input type="text" placeholder="(x, y)" name="input_1">
-                <button type="submit">Submit</button>
+                <button type="" disabled>    </button>
             </div>
+
             <div id="result_box" class="{{result}}">
                 <input type="text" placeholder="(x, y)" name="input_2">
-                <button type="submit">Submit</button>
+                <button type="" disabled>    </button>
             </div>
+
+            <div id="result_box" class="{{result}}">
+                <input type="text" placeholder="(x, y)" name="input_3">
+                <button type="" disabled>    </button>
+            </div>
+
+            <div id="result_box" class="{{result}}">
+                <input type="text" placeholder="(x, y)" name="input_4">
+                <button type="" disabled>    </button>
+            </div>
+
+            <div id="result_box" class="{{result}}">
+                <input type="text" placeholder="(x, y)" name="input_5">
+                <button type="" disabled>    </button>
+            </div>
+
+            <button type="submit" id="submit_button">Submit All</button>
         </form>
     </div>
 </body>

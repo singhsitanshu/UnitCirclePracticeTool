@@ -5,8 +5,37 @@
     height: 900px;
 }
 
-.inputs #result_box{
+.inputs #result_box button {
+    opacity: 0;
+    background-color: transparent;
+}
+
+.inputs #result_box:nth-child(1){
     position: absolute;
     left: 1390px;
     top: 258px;
+}
+
+.inputs #result_box:nth-child(2){
+    position: absolute;
+    left: 1319px;
+    top: 168px;
+}
+
+.inputs #result_box:nth-child(3){
+    position: absolute;
+    left: 1211px;
+    top: 83px;
+}
+
+.inputs #result_box:nth-child(4){
+    position: absolute;
+    left: 900px;
+    top: 21px;
+}
+
+.inputs #result_box:nth-child(5){
+    position: absolute;
+    left: 585px;
+    top: 83px;
 }
